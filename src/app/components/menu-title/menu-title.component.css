@@ -1,0 +1,32 @@
+.container-menu-title {
+	color: white;
+}
+
+.container-menu-title > h1 {
+	font-size: 15vw;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.container-menu-title > hr {
+	margin-top: .5vw;
+	margin-bottom: .5vw;
+}
+
+.container-menu-title > hr:first-child {
+	transform: translateY(3vw);
+	-webkit-transform: translateY(3vw);
+	-moz-transform: translateY(3vw);
+	-ms-transform: translateY(3vw);
+	-o-transform: translateY(3vw);
+}
+
+.container-menu-title > hr:last-child {
+	transform: translateY(-1.5vw);
+	-webkit-transform: translateY(-1.5vw);
+	-moz-transform: translateY(-1.5vw);
+	-ms-transform: translateY(-1.5vw);
+	-o-transform: translateY(-1.5vw);
+}
