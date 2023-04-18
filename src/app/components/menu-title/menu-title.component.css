@@ -3,7 +3,8 @@
 }
 
 .container-menu-title > h1 {
-	font-size: 15vw;
+	font-size: min(15vw, 8rem);
+
 	font-weight: bold;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	display: flex;
@@ -13,20 +14,38 @@
 .container-menu-title > hr {
 	margin-top: .5vw;
 	margin-bottom: .5vw;
+	opacity: .3;
+	z-index: 2;
 }
 
-.container-menu-title > hr:first-child {
-	transform: translateY(3vw);
-	-webkit-transform: translateY(3vw);
-	-moz-transform: translateY(3vw);
-	-ms-transform: translateY(3vw);
-	-o-transform: translateY(3vw);
+.container-menu-title > .bottom-line:first-child {
+	transform: translateY(min(3vw, 22px));
+	-webkit-transform: translateY(min(3vw, 22px));
+	-moz-transform: translateY(min(3vw, 22px));
+	-ms-transform: translateY(min(3vw, 22px));
+	-o-transform: translateY(min(3vw, 22px));
 }
 
-.container-menu-title > hr:last-child {
-	transform: translateY(-1.5vw);
-	-webkit-transform: translateY(-1.5vw);
-	-moz-transform: translateY(-1.5vw);
-	-ms-transform: translateY(-1.5vw);
-	-o-transform: translateY(-1.5vw);
+.container-menu-title > .bottom-line:last-child {
+	transform: translateY(max(-1.5vw, -12px));
+	-webkit-transform: translateY(max(-1.5vw, -12px));
+	-moz-transform: translateY(max(-1.5vw, -12px));
+	-ms-transform: translateY(max(-1.5vw, -12px));
+	-o-transform: translateY(max(-1.5vw, -12px));
+}
+
+.bottom-line {
+	border: 1px solid;
+	opacity: .2;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.container-menu-title > h1 {
+	font-size: min(13vw, 8rem);
+}
 }
