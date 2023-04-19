@@ -1,4 +1,5 @@
 <div class="container-menu-bar">
+	<input class="checkbox" type="checkbox" name="" id="" />
 	<div class="user-icon-menu">
 		<div class="user-icon">
 			<span>J</span>
@@ -6,8 +7,36 @@
 	</div>
 	<div class="pages-menu">
 		<ul>
-			<li><a href="#">LinkedIn</a></li>
-			<li><a href="#">GitHub</a></li>
+			<li>
+				<a
+				id="home"
+				(click)="toggle($event)"
+				[ngClass]="selectedPage === 'home' ? 'selected-page' : ''"
+				href="#">Home</a></li>
+			<li>
+				<a
+				id="campo"
+				(click)="toggle($event)"
+				[ngClass]="selectedPage === 'campo' ? 'selected-page' : ''"
+				href="#">Campo</a></li>
+			<li>
+				<a
+				id="praia"
+				(click)="toggle($event)"
+				[ngClass]="selectedPage === 'praia' ? 'selected-page' : ''"
+				href="#">Praia</a></li>
+			<li>
+				<a
+				id="calmo"
+				(click)="toggle($event)"
+				[ngClass]="selectedPage === 'calmo' ? 'selected-page' : ''"
+				href="#">Relaxar</a></li>
+			<li>
+				<a
+				id="aventura"
+				(click)="toggle($event)"
+				[ngClass]="selectedPage === 'aventura' ? 'selected-page' : ''"
+				href="#">Aventura</a></li>
 		</ul>
 	</div>
 	<div class="social-media-menu">
@@ -43,7 +72,6 @@
 		</div>
 	</div>
 	<div class="burger-menu">
-		<input class="checkbox" type="checkbox" name="" id="" />
 		<div class="hamburger-lines">
 			<span class="line line1"></span>
 			<span class="line line2"></span>

@@ -2,21 +2,20 @@
 	<div class="big-card-photo">
 		<!-- src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" -->
 		<img
-		src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+		[src]="image"
 		alt=""
 		height="200px"
 		>
 	</div>
 	<div class="big-card-date">
-		<span>january 11, 2022</span>
+		<span>{{date}}</span>
 	</div>
 	<div class="big-card-title">
-		<h1>Saiu a nova versão do Angular</h1>
+		<h1>{{title}}</h1>
 	</div>
 	<div class="big-card-description">
 		<p>
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam similique rem ipsam.
-			Illum unde cupiditate aperiam beatae ab nisi architecto vero nobis!
+			{{description}}
 		</p>
 	</div>
 </div>
