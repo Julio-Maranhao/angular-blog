@@ -4,3 +4,19 @@
 	padding: 0 2rem 0 2rem;
 	margin: auto;
 }
+
+footer {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-size: .625rem;
+	opacity: .5;
+}
+
+footer > div > p {
+	margin-top: 1rem;
+}
+
+footer > div > hr {
+	margin-top: 8rem;
+}

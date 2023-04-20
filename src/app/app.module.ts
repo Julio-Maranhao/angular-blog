@@ -11,6 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+
+	],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

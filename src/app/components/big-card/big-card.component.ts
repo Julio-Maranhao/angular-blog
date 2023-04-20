@@ -10,4 +10,5 @@ export class BigCardComponent {
 	@Input() date: String = '';
 	@Input() title: String = '';
 	@Input() description: String = '';
+	@Input() id: String = '0';
 }

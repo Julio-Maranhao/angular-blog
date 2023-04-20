@@ -1,0 +1,24 @@
+
+.articles {
+	width: min(1024px, 100%);
+	padding: 0 2rem 0 2rem;
+	margin: auto;
+}
+
+.articles > div > hr {
+	opacity: .3;
+	margin: 0 0 0 1rem;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+	.flex-row {
+	flex-direction: column;
+	justify-content: unset;
+	}
+}

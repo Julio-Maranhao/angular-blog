@@ -1,1 +1,24 @@
-<p>categories works!</p>
+<div class="articles">
+	<app-menu-title></app-menu-title>
+</div>
+
+<div class="articles flex-row">
+	<div class="articles-main">
+		<app-big-card
+		[id]="mainElement.id"
+		[image]="mainElement.photo"
+		[date]="mainElement.date"
+		[title]="mainElement.title"
+		[description]="mainElement.description"
+		></app-big-card>
+	</div>
+	<div class="articles-others">
+		<app-small-card
+		*ngFor="let card of otherElements"
+		id="{{card.id}}"
+		image="{{card.photo}}"
+		date="{{card.date}}"
+		title="{{card.title}}"
+		></app-small-card>
+	</div>
+</div>

@@ -12,36 +12,36 @@
 				id="home"
 				(click)="toggle($event)"
 				[ngClass]="selectedPage === 'home' ? 'selected-page' : ''"
-				href="#">Home</a></li>
+				[routerLink]="['']">Home</a></li>
 			<li>
 				<a
 				id="campo"
 				(click)="toggle($event)"
 				[ngClass]="selectedPage === 'campo' ? 'selected-page' : ''"
-				href="#">Campo</a></li>
+				[routerLink]="['categories', 'campo']">Campo</a></li>
 			<li>
 				<a
 				id="praia"
 				(click)="toggle($event)"
 				[ngClass]="selectedPage === 'praia' ? 'selected-page' : ''"
-				href="#">Praia</a></li>
+				[routerLink]="['categories', 'praia']">Praia</a></li>
 			<li>
 				<a
 				id="calmo"
 				(click)="toggle($event)"
 				[ngClass]="selectedPage === 'calmo' ? 'selected-page' : ''"
-				href="#">Relaxar</a></li>
+				[routerLink]="['categories', 'calmo']">Relaxar</a></li>
 			<li>
 				<a
 				id="aventura"
 				(click)="toggle($event)"
 				[ngClass]="selectedPage === 'aventura' ? 'selected-page' : ''"
-				href="#">Aventura</a></li>
+				[routerLink]="['categories', 'aventura']">Aventura</a></li>
 		</ul>
 	</div>
 	<div class="social-media-menu">
 		<div class="linkedin">
-			<a href="#">
+			<a href="https://www.linkedin.com/in/julio-maranh%C3%A3o-41a5ab226/">
 				<svg
 				height="24px"
 				widith="24px"
@@ -54,7 +54,7 @@
 			</a>
 		</div>
 		<div class="github">
-			<a href="#">
+			<a href="https://github.com/Julio-Maranhao">
 				<svg
 				height="24px"
 				widith="24px"
